@@ -1,6 +1,3 @@
-Here’s your HTML code with the requested comments added to the stylesheet:
-
-```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,8 +18,20 @@ Here’s your HTML code with the requested comments added to the stylesheet:
             padding: 0;
         }
 
+        /* Container for the entire document */
+        #container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-bottom: 50px;
+        }
+
         /* Banner name at top */
-        h1 {
+        #name {
+            border-bottom: 1px solid #33485e;
+            width: 60%;
+            min-width: 300px;
+            margin: 0 auto;
             font-size: 3em;
             color: #33485e;
             text-align: center;
@@ -30,7 +39,10 @@ Here’s your HTML code with the requested comments added to the stylesheet:
         }
 
         /* Title below name */
-        strong {
+        #title {
+            font-weight: 600;
+            text-align: center;
+            margin: 20px 0 0 0;
             font-size: 1.5em;
             color: #33485e;
             text-transform: uppercase;
@@ -42,102 +54,155 @@ Here’s your HTML code with the requested comments added to the stylesheet:
             padding: 0;
         }
 
-        /* List item styles */
-        ul li {
-            font-size: 1em;
+        /* Menu styles for contact info */
+        .menu {
+            margin: 10px 0 20px 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Style for menu list items */
+        .menu li {
+            display: inline;
+            padding: 0 20px;
         }
 
         /* Section titles */
-        h2 {
+        .sectionheader {
+            margin: 20px 0 10px 0;
+            padding: 5px 0 5px 10px;
+            width: 100%;
+            min-width: 300px;
             font-size: 1.5em;
             text-transform: uppercase;
             background-color: #33485e;
             color: white;
             font-weight: 400;
-            padding: 10px;
         }
 
         /* Job titles */
-        h3 {
+        .jobtitle {
             font-weight: 600;
             font-size: 1.5em;
         }
 
         /* Job organization names */
-        h4 {
+        .organization {
             font-weight: 400;
-            font-size: 1.5em;
+            font-size: 1.2em;
             font-style: italic;
         }
 
         /* Job dates */
-        h5 {
+        .date {
             font-weight: 700;
             font-size: 1em;
+            margin: 2px 0 0 0;
         }
 
         /* Paragraph styles */
-        p {
-            margin: 0 0 1em;
+        p.description {
+            margin: 10px 0;
+        }
+
+        /* Education list */
+        #degrees {
+            margin-top: 5px;
+        }
+
+        /* Skills list */
+        #do {
+            margin-top: 5px;
+        }
+
+        /* Headshot container styles */
+        #headshot-container {
+            text-align: center;
+        }
+
+        /* Headshot styles */
+        #headshot {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #33485e;
+        }
+
+        /* Link styles */
+        a:link {
+            font-weight: 600;
+            color: #0bc5f4;
+        }
+
+        a:hover {
+            color: #33485e;
+        }
+
+        a:visited {
+            color: #6e38c7;
         }
     </style>
 </head>
 <body>
-    <!-- I built this myself! -->
-    <h1>Andrikka Jones</h1>
-    <!-- <img src="Andrikka JonesSSP_1514.jpg" alt="Andrikka Jones Photo" width="300"><br> -->
+    <!-- Main container for the resume -->
+    <div id="container">
+        <h1 id="name">Andrikka Jones</h1>
+        <!-- Contact information menu -->
+        <ul class="menu">
+            <li><a href="mailto:Andrikkajones@gmail.com">Andrikkajones@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/andrikka-jones">LinkedIn</a></li>
+            <li><a href="https://x.com/andrikkajones">X</a></li>
+            <li><a href="https://github.com/Atjones92">GitHub</a></li>
+        </ul>
 
-    <strong>Media Producer</strong><br>
-    
-    <ul>
-        <li><a href="mailto:Andrikkajones@gmail.com">Andrikkajones@gmail.com</a></li>
-        <li><a href="https://www.linkedin.com/in/andrikka-jones">LinkedIn</a></li>
-        <li><a href="https://x.com/andrikkajones">X</a></li>
-        <li><a href="https://github.com/Atjones92">GitHub</a></li>
-    </ul>
-    
-    <h2>Experience</h2>
-    
-    <h3>Livestream Intern</h3>
-    <h4>Spark Street Digital</h4>
-    <h5>February 2024 - Present</h5>
-    <p>My responsibilities include installing, configuring, and maintaining video production and broadcast equipment, performing routine maintenance to ensure optimal performance, and troubleshooting technical issues. I also collaborate with production teams to design video workflows, monitor and manage video signals for quality output, and provide technical support during live events.</p>
+        <!-- Headshot section -->
+        <div id="headshot-container">
+            <img id="headshot" src="Andrikka JonesSSP_1514.jpg" alt="Andrikka Jones Photo"><br>
+        </div>
 
-    <h3>Newborn Photographer</h3>
-    <h4>MedStar Montgomery Medical Center</h4>
-    <h5>September 2024 - Present</h5>
-    <p>My responsibilities involve capturing high-quality photographs of newborns to create lasting memories for families, collaborating with hospital staff to schedule sessions with minimal disruption, and maintaining a safe environment for photography. I also edit and enhance photos to ensure quality, manage orders, including prints and digital copies, and coordinate with parents for selections and purchases.</p>
+        <div id="title">Media Producer</div>
+        
+        <div class="sectionheader">Experience</div>
+        
+        <div class="jobtitle">Livestream Intern</div>
+        <div class="organization">Spark Street Digital</div>
+        <div class="date">February 2024 - Present</div>
+        <p class="description">My responsibilities include installing, configuring, and maintaining video production and broadcast equipment, performing routine maintenance to ensure optimal performance, and troubleshooting technical issues. I also collaborate with production teams to design video workflows, monitor and manage video signals for quality output, and provide technical support during live events.</p>
+        <br>
 
-    <h3>Event Marketing Lead</h3>
-    <h4>Samuel Riggs IV Alumni Center</h4>
-    <h5>May 2023 - Present</h5>
-    <p>My responsibilities include managing and responding to event leads and inquiries, providing administrative support to the Director of Sales and Marketing and the Alumni Center team, and offering logistical support for clients. I also handle pre-meetings and communications to gather event details, conduct client walkthroughs and site visits, create room diagrams, and write Event Memos to ensure seamless coordination from client communication to event execution.</p>
+        <div class="jobtitle">Newborn Photographer</div>
+        <div class="organization">MedStar Montgomery Medical Center</div>
+        <div class="date">September 2024 - Present</div>
+        <p class="description">My responsibilities involve capturing high-quality photographs of newborns to create lasting memories for families, collaborating with hospital staff to schedule sessions with minimal disruption, and maintaining a safe environment for photography. I also edit and enhance photos to ensure quality, manage orders, including prints and digital copies, and coordinate with parents for selections and purchases.</p>
+        <br>
 
-    <h3>Technical Operations Coordinator</h3>
-    <h4>Robert H. Smith School of Business at UMD</h4>
-    <h5>September 2022 - Present</h5>
-    <p>I possess a solid understanding of audio, video, and media equipment, including digital and analog devices and complex computer systems. My proficiency in video editing and production, troubleshooting PC and MAC functions, and ensuring ADA compliance is essential. Also, strong communication skills, customer service, event planning, project management, and working with diverse stakeholders are required.</p>
+        <div class="jobtitle">Event Marketing Lead</div>
+        <div class="organization">Samuel Riggs IV Alumni Center</div>
+        <div class="date">May 2023 - Present</div>
+        <p class="description">My responsibilities include managing and responding to event leads and inquiries, providing administrative support to the Director of Sales and Marketing and the Alumni Center team, and offering logistical support for clients. I also handle pre-meetings and communications to gather event details, conduct client walkthroughs and site visits, create room diagrams, and write Event Memos to ensure seamless coordination from client communication to event execution.</p>
+        <br>
 
-    <h2>Education</h2>
-    <ul>
-        <li>Graduate Certificate of Professional Studies in Multimedia Journalism, Philip Merrill College of Journalism at UMD, December 2024</li>
-        <li>Bachelor of Family and Consumer Sciences/Human Sciences, University of Maryland, Eastern Shore, December 2016</li>
-        <li>Associate of Advertising Marketing Communications, Fashion Institute of Technology, May 2015</li>
-    </ul>
+        <div class="jobtitle">Technical Operations Coordinator</div>
+        <div class="organization">Robert H. Smith School of Business at UMD</div>
+        <div class="date">September 2022 - Present</div>
+        <p class="description">I possess a solid understanding of audio, video, and media equipment, including digital and analog devices and complex computer systems. My proficiency in video editing and production, troubleshooting PC and MAC functions, and ensuring ADA compliance is essential. Also, strong communication skills, customer service, event planning, project management, and working with diverse stakeholders are required.</p>
+        <br>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>Photography</li>
-        <li>Videography</li>
-        <li>Graphic Design</li>
-        <li>Multimedia Editor</li>
-    </ul>
+        <div class="sectionheader">Education</div>
+        <ul id="degrees">
+            <li>Graduate Certificate of Professional Studies in Multimedia Journalism, Philip Merrill College of Journalism at UMD, December 2024</li>
+            <li>Bachelor of Family and Consumer Sciences/Human Sciences, University of Maryland, Eastern Shore, December 2016</li>
+            <li>Associate of Advertising Marketing Communications, Fashion Institute of Technology, May 2015</li>
+        </ul>
+
+        <div class="sectionheader">Skills</div>
+        <ul id="do">
+            <li>Photography</li>
+            <li>Videography</li>
+            <li>Graphic Design</li>
+            <li>Multimedia Editor</li>
+        </ul>
+    </div>
 </body>
 </html>
-```
-
-### Key Changes:
-- Added a comment at the top of the stylesheet indicating it is for your resume.
-- Added short comments before each CSS selector to describe what the styles below apply to.
-
-You can now copy this code into your HTML file. Let me know if you need any further changes!
