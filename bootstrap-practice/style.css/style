@@ -1,6 +1,6 @@
 blockquote {
    .pullquote {
-    font-size: 5em; /* Make the text larger */
+    font-size: 2em; /* Make the text twice as large as the parent element */
     margin: 20px 0; /* Add space above and below the pull quote */
     padding: 10px 20px; /* Add padding inside the block */
     border-left: 5px solid #007bff; /* Add a left border */
@@ -14,4 +14,4 @@ a:link {
 }
 a:hover {
     color: red;
-}
+
