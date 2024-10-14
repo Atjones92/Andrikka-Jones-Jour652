@@ -14,14 +14,15 @@ body {
 
 .headline {
     font-family: Helvetica, sans-serif;
-    font-size: 2em;
+    font-size: 2em; /* Adjust size as necessary */
     margin: 20px 0;
 }
 
 #byline {
     font-family: Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 14px; /* Smaller than headline */
     font-style: italic;
+    color: #555; /* Optional: change color for differentiation */
 }
 
 img {
