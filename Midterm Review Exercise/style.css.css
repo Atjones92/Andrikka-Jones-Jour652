@@ -14,7 +14,7 @@ body {
 
 .headline {
     font-family: Helvetica, sans-serif;
-    font-size: 2em; /* Adjust as necessary */
+    font-size: 2em;
     margin: 20px 0;
 }
 
@@ -31,7 +31,7 @@ img {
 }
 
 .pull-quote {
-    font-size: 1.5em; /* Adjust size for visibility */
+    font-size: 1.5em;
     font-style: italic;
     margin: 20px 0;
     padding: 10px;
