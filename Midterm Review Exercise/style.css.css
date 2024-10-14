@@ -1,0 +1,53 @@
+body {
+    font-family: Georgia, serif;
+    font-size: 13px;
+    margin: 20px;
+}
+
+.masthead {
+    width: 100%;
+    max-width: 900px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.headline {
+    font-family: Helvetica, sans-serif;
+    font-size: 2em; /* Adjust as necessary */
+    margin: 20px 0;
+}
+
+#byline {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.pull-quote {
+    font-size: 1.5em; /* Adjust size for visibility */
+    font-style: italic;
+    margin: 20px 0;
+    padding: 10px;
+    border-left: 4px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
