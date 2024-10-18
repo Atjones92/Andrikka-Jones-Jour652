@@ -60,3 +60,21 @@ blockquote {
 #related-items li {
     margin: 5px 0;
 }
+
+.lead-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.story-image {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+.chart-image {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
