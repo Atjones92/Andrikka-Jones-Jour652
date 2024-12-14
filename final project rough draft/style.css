@@ -1,0 +1,25 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+}
+.lead-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* Responsive */
+}
+
+blockquote {
+    margin: 1.5em auto; /* Center blockquote */
+}
+<!-- First Image -->
+<img src="game%20day.jpg" alt="Infographic showing students on game day" class="img-fluid large-image">
+
+<!-- Second Image -->
+<img src="college%20betting.jpg" alt="Infographic showing money spent on sports betting" class="img-fluid large-image">
+
+<!-- Third Image -->
+<img src="mobile%20sports%20betting.jpg" alt="Infographic showing students betting on their personal devices" class="img-fluid large-image">
